@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  [name: 
+  dob: 
+  gender: MyString
+
+two:
+  [name: 
+  dob: 
+  gender: MyString

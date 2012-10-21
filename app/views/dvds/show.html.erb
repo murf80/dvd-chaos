@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>[name:</b>
+  <%= @dvd.[name %>
+</p>
+
+<p>
+  <b>Release date:</b>
+  <%= @dvd.release_date %>
+</p>
+
+<p>
+  <b>Summary:</b>
+  <%= @dvd.summary %>
+</p>
+
+<p>
+  <b>Asin:</b>
+  <%= @dvd.asin %>
+</p>
+
+
+<%= link_to 'Edit', edit_dvd_path(@dvd) %> |
+<%= link_to 'Back', dvds_path %>
