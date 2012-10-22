@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bfd91d6-cb1a-4958-87a4-9f2c575f5676" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dvd-chaos.iml" afterPath="$PROJECT_DIR$/.idea/dvd-chaos.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/actors.yml" afterPath="$PROJECT_DIR$/test/fixtures/actors.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/directors.yml" afterPath="$PROJECT_DIR$/test/fixtures/directors.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/dvds.yml" afterPath="$PROJECT_DIR$/test/fixtures/dvds.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/staffs.yml" afterPath="$PROJECT_DIR$/test/fixtures/staffs.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/actors/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/actors/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/directors/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/directors/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/dvds/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/dvds/_form.html.erb" />
     </list>
     <ignored path="dvd-chaos.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,21 +27,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="20121022031544_index_name_on_actors.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20121022031544_index_name_on_actors.rb">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="24" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1350875800000" expanded="true" signature="58:110" placeholder=" ... end" />
-              </folding>
+            <state line="13" column="36" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/actors/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="36" selection-start="261" selection-end="261" vertical-scroll-proportion="0.5213904">
+            <state line="15" column="27" selection-start="422" selection-end="422" vertical-scroll-proportion="-2.1518986">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/directors/_form.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="27" selection-start="437" selection-end="437" vertical-scroll-proportion="-2.1518986">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/dvds/_form.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="27" selection-start="412" selection-end="412" vertical-scroll-proportion="0.5762712">
               <folding />
             </state>
           </provider>
@@ -117,17 +123,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20121022031601_index_name_on_directors.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20121022031601_index_name_on_directors.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="16" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1350875800000" expanded="true" signature="61:116" placeholder=" ... end" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -150,9 +145,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20121022023420_create_actors.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20121021013143_create_dvds.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20121022025722_index_name_on_dvds.rb" />
         <option value="$PROJECT_DIR$/app/views/dvds/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/dvds/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/directors/index.html.erb" />
@@ -166,6 +158,9 @@
         <option value="$PROJECT_DIR$/test/fixtures/dvds.yml" />
         <option value="$PROJECT_DIR$/test/fixtures/staffs.yml" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/views/actors/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/directors/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/dvds/_form.html.erb" />
       </list>
     </option>
   </component>
@@ -195,7 +190,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="RailsProjectView" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -350,6 +345,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dvds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dvd-chaos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dvd-chaos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -398,38 +415,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="dvd-chaos" />
               <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dvd-chaos" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dvd-chaos" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="features" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.MinorFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="support" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.FolderSubFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dvd-chaos" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dvd-chaos" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="features" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.MinorFolderNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -902,7 +887,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="728" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296355" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296355" sideWeight="0.49675852" order="-1" side_tool="false" content_ui="tabs" />
@@ -914,7 +899,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39936608" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296355" sideWeight="0.20097245" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296355" sideWeight="0.7933549" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296355" sideWeight="0.7933549" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -978,20 +963,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/dvds/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/dvds/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/dvds/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="16" selection-start="69" selection-end="69" vertical-scroll-proportion="0.09463722">
@@ -1017,7 +988,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="16" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1350875800000" expanded="true" signature="61:116" placeholder=" ... end" />
+            <marker date="1350875800000" expanded="true" signature="-1:-1" placeholder=" ... end" />
           </folding>
         </state>
       </provider>
@@ -1026,7 +997,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="24" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1350875800000" expanded="true" signature="58:110" placeholder=" ... end" />
+            <marker date="1350875800000" expanded="true" signature="-1:-1" placeholder=" ... end" />
           </folding>
         </state>
       </provider>
@@ -1088,7 +1059,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="36" selection-start="261" selection-end="261" vertical-scroll-proportion="0.5213904">
+        <state line="13" column="36" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/actors/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="27" selection-start="422" selection-end="422" vertical-scroll-proportion="-2.1518986">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/directors/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="27" selection-start="437" selection-end="437" vertical-scroll-proportion="-2.1518986">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dvds/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="27" selection-start="412" selection-end="412" vertical-scroll-proportion="0.5762712">
           <folding />
         </state>
       </provider>
