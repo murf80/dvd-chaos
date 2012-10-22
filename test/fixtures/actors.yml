@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  [name: 
+  name:
   dob: 
   gender: 
 
 two:
-  [name: 
+  name:
   dob: 
   gender: 

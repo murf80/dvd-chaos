@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  [name: 
+  name:
   release_date: 
   summary: 
   asin: MyString
 
 two:
-  [name: 
+  name:
   release_date: 
   summary: 
   asin: MyString
