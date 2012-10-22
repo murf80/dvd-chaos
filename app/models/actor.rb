@@ -1,3 +1,5 @@
-class Actor < Staff
-  attr_accessible :[name, :dob, :gender
+class Actor < ActiveRecord::Base
+  attr_accessible :dob, :gender, :name
+
+  has_and_belongs_to_many :dvds
 end
