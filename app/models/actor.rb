@@ -3,5 +3,7 @@ class Actor < ActiveRecord::Base
 
   validates_uniqueness_of :name
 
+  validates_presence_of :gender
+
   has_and_belongs_to_many :dvds
 end

@@ -10,18 +10,32 @@ end
 
 Then /^I should see "([^"]*)"$/ do |arg|
   assert page.has_content?(arg)
-  puts page.body.inspect
 end
 
-When /^I add a duplicate actor  with name "([^"]*)"$/ do |arg|
-  @dup_detected = true
+When /^I add a duplicate actor  with name "([^"]*)" and gender "([^"]*)"$/ do |arg1, arg2|
   begin
-    dup_actor = FactoryGirl.create(:actor, :name => arg)
+    dup_actor = FactoryGirl.create(:actor, :name => arg1, :gender => arg2)
   rescue ActiveRecord::RecordInvalid => invalid
-    @dup_detected = false
+    @dup_error = invalid
   end
 end
 
 Then /^The actor should be invalid$/ do
-  assert !@dup_detected
+  assert (@dup_error.to_s.include? "Name has already been taken")
+end
+
+When /^I add an actor with no gender$/ do
+  begin
+    FactoryGirl.create(:actor, :name => "foo name", :gender => nil)
+  rescue ActiveRecord::RecordInvalid => invalid
+    @gender_error = invalid
+  end
+end
+
+Then /^The actor should be invalid due to missing gender$/ do
+  assert (@gender_error.to_s.include? "Gender can't be blank")
+end
+
+Given /^nothing whatsoever$/ do
+  # do nothing
 end
