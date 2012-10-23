@@ -8,7 +8,7 @@ When /^I go to the actors page$/ do
   page.visit('/actors')
 end
 
-Then /^I should see "([^"]*)"$/ do |arg|
+Then /^I should see actor "([^"]*)"$/ do |arg|
   assert page.has_content?(arg)
 end
 
@@ -34,8 +34,4 @@ end
 
 Then /^The actor should be invalid due to missing gender$/ do
   assert (@gender_error.to_s.include? "Gender can't be blank")
-end
-
-Given /^nothing whatsoever$/ do
-  # do nothing
 end

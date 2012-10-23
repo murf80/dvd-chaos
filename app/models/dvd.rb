@@ -3,6 +3,8 @@ class Dvd < ActiveRecord::Base
 
   validates_uniqueness_of :name
 
+  validates_presence_of :summary
+
   has_and_belongs_to_many :actors
 
   has_one :director

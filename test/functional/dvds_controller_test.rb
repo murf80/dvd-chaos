@@ -2,7 +2,8 @@ require 'test_helper'
 
 class DvdsControllerTest < ActionController::TestCase
   setup do
-    @dvd = dvds(:one)
+    #@dvd = dvds(:one)
+    @dvd = FactoryGirl.create(:dvd)
   end
 
   test "should get index" do
@@ -18,7 +19,7 @@ class DvdsControllerTest < ActionController::TestCase
 
   test "should create dvd" do
     assert_difference('Dvd.count') do
-      post :create, dvd: { [name: @dvd.[name, asin: @dvd.asin, release_date: @dvd.release_date, summary: @dvd.summary }
+      post :create, dvd: { name: @dvd.name + "makeunique", asin: @dvd.asin, release_date: @dvd.release_date, summary: @dvd.summary }
     end
 
     assert_redirected_to dvd_path(assigns(:dvd))
@@ -35,7 +36,7 @@ class DvdsControllerTest < ActionController::TestCase
   end
 
   test "should update dvd" do
-    put :update, id: @dvd, dvd: { [name: @dvd.[name, asin: @dvd.asin, release_date: @dvd.release_date, summary: @dvd.summary }
+    put :update, id: @dvd, dvd: { name: @dvd.name, asin: @dvd.asin, release_date: @dvd.release_date, summary: @dvd.summary }
     assert_redirected_to dvd_path(assigns(:dvd))
   end
 

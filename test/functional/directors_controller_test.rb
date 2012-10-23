@@ -2,7 +2,8 @@ require 'test_helper'
 
 class DirectorsControllerTest < ActionController::TestCase
   setup do
-    @director = directors(:one)
+    #@director = directors(:one)
+    @director = FactoryGirl.create(:director)
   end
 
   test "should get index" do
@@ -18,7 +19,7 @@ class DirectorsControllerTest < ActionController::TestCase
 
   test "should create director" do
     assert_difference('Director.count') do
-      post :create, director: { [name: @director.[name, dob: @director.dob, gender: @director.gender }
+      post :create, director: { name: @director.name + "makeunique", dob: @director.dob, gender: @director.gender }
     end
 
     assert_redirected_to director_path(assigns(:director))
@@ -35,7 +36,7 @@ class DirectorsControllerTest < ActionController::TestCase
   end
 
   test "should update director" do
-    put :update, id: @director, director: { [name: @director.[name, dob: @director.dob, gender: @director.gender }
+    put :update, id: @director, director: { name: @director.name, dob: @director.dob, gender: @director.gender }
     assert_redirected_to director_path(assigns(:director))
   end
 

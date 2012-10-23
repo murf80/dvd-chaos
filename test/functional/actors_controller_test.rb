@@ -1,8 +1,10 @@
 require 'test_helper'
+require 'factory_girl'
 
 class ActorsControllerTest < ActionController::TestCase
   setup do
-    @actor = actors(:one)
+    #@actor = actors(:one)
+    @actor = FactoryGirl.create(:actor)
   end
 
   test "should get index" do
@@ -18,7 +20,7 @@ class ActorsControllerTest < ActionController::TestCase
 
   test "should create actor" do
     assert_difference('Actor.count') do
-      post :create, actor: { [name: @actor.[name, dob: @actor.dob, gender: @actor.gender }
+      post :create, actor: { name: @actor.name + "makeunique", dob: @actor.dob, gender: @actor.gender }
     end
 
     assert_redirected_to actor_path(assigns(:actor))
@@ -35,7 +37,7 @@ class ActorsControllerTest < ActionController::TestCase
   end
 
   test "should update actor" do
-    put :update, id: @actor, actor: { [name: @actor.[name, dob: @actor.dob, gender: @actor.gender }
+    put :update, id: @actor, actor: { name: @actor.name, dob: @actor.dob, gender: @actor.gender }
     assert_redirected_to actor_path(assigns(:actor))
   end
 

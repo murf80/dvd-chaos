@@ -6,10 +6,9 @@ Feature: Actor tests
       | Name      | Gender | dob        |
       | Alan Alda | male   | 01-28-1963 |
     When I go to the actors page
-    Then I should see "Alan Alda"
+    Then I should see actor "Alan Alda"
 
   Scenario: Create actor with missing info
-    Given nothing whatsoever
     When I add an actor with no gender
     Then The actor should be invalid due to missing gender
 

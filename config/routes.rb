@@ -1,8 +1,6 @@
 DvdChaos::Application.routes.draw do
   resources :directors
 
-  resources :staffs
-
   resources :actors
 
   resources :dvds
