@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bfd91d6-cb1a-4958-87a4-9f2c575f5676" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/bmurphy.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/actor.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/dvd.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/step_definitions/actor_steps.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dvd-chaos.iml" afterPath="$PROJECT_DIR$/.idea/dvd-chaos.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/actor.rb" afterPath="$PROJECT_DIR$/app/models/actor.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/director.rb" afterPath="$PROJECT_DIR$/app/models/director.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/dvd.rb" afterPath="$PROJECT_DIR$/app/models/dvd.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/actor.feature" afterPath="$PROJECT_DIR$/features/actor.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/actor_steps.rb" afterPath="$PROJECT_DIR$/features/step_definitions/actor_steps.rb" />
     </list>
     <ignored path="dvd-chaos.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,25 +41,34 @@
       <file leaf-file-name="actor.feature" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/actor.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="28" selection-start="174" selection-end="187" vertical-scroll-proportion="0.0">
+            <state line="15" column="39" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <file leaf-file-name="actor.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/actor.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="22" selection-start="811" selection-end="817" vertical-scroll-proportion="0.0">
+            <state line="3" column="2" selection-start="75" selection-end="104" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="env.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/support/env.rb">
+      <file leaf-file-name="director.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/director.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="32" selection-start="925" selection-end="925" vertical-scroll-proportion="0.0">
+            <state line="3" column="31" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dvd.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/dvd.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="31" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -71,25 +77,7 @@
       <file leaf-file-name="actor_steps.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/features/step_definitions/actor_steps.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="19" selection-start="358" selection-end="358" vertical-scroll-proportion="0.29945552">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="step_invocation.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194@global/gems/cucumber-1.2.1/lib/cucumber/ast/step_invocation.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="1119" selection-end="1119" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="actor_factories.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/factories/actor_factories.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="57" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
+            <state line="25" column="10" selection-start="688" selection-end="688" vertical-scroll-proportion="0.8984375">
               <folding />
             </state>
           </provider>
@@ -112,9 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20121022031601_index_name_on_directors.rb" />
-        <option value="$PROJECT_DIR$/test/fixtures/actors.yml" />
-        <option value="$PROJECT_DIR$/test/fixtures/directors.yml" />
         <option value="$PROJECT_DIR$/test/fixtures/dvds.yml" />
         <option value="$PROJECT_DIR$/test/fixtures/staffs.yml" />
         <option value="$PROJECT_DIR$/app/views/actors/_form.html.erb" />
@@ -126,6 +111,9 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/test/test_helper.rb" />
         <option value="$PROJECT_DIR$/test/factories/actor_factories.rb" />
+        <option value="$PROJECT_DIR$/app/models/actor.rb" />
+        <option value="$PROJECT_DIR$/app/models/director.rb" />
+        <option value="$PROJECT_DIR$/app/models/dvd.rb" />
         <option value="$PROJECT_DIR$/features/actor.feature" />
         <option value="$PROJECT_DIR$/features/step_definitions/actor_steps.rb" />
       </list>
@@ -140,8 +128,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="2048" />
-    <option name="height" value="1059" />
+    <option name="width" value="1280" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -622,7 +610,9 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
       <RunnerSettings RunnerId="RubyDebugRunner" />
+      <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -949,19 +939,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="2048" height="1059" extended-state="6" />
+    <frame x="0" y="22" width="1280" height="728" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296355" sideWeight="0.49675852" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.6703645" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1993007" sideWeight="0.23700623" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1993007" sideWeight="0.35654885" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3991684" sideWeight="0.6913087" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32333875" sideWeight="0.2646593" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32333875" sideWeight="0.3961965" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43898574" sideWeight="0.68962723" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3991684" sideWeight="0.3051948" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32848233" sideWeight="0.77222776" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3280507" sideWeight="0.22690438" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3280507" sideWeight="0.76742303" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296355" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1026,37 +1016,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/tasks/cucumber.rake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="19" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/dvd.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="9" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/actors/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="27" selection-start="422" selection-end="422" vertical-scroll-proportion="-9.375">
-          <folding>
-            <marker date="1350879402000" expanded="true" signature="-1:-1" placeholder="do ... end" />
-            <marker date="1350879402000" expanded="true" signature="-1:-1" placeholder="if ... end" />
-            <marker date="1350879402000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1350879402000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1350879402000" expanded="true" signature="-1:-1" placeholder="do ... end" />
-            <marker date="1350879402000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1350879402000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1350879402000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1350879402000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/actors/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1110,20 +1069,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/actor.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="28" selection-start="174" selection-end="187" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/factories/actor_factories.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="57" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194@global/gems/cucumber-1.2.1/lib/cucumber/ast/scenario.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="108" column="0" selection-start="2879" selection-end="2879" vertical-scroll-proportion="0.5372051">
@@ -1145,16 +1090,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/actor.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="2" selection-start="75" selection-end="104" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/director.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="31" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/dvd.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="31" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194@global/gems/cucumber-1.2.1/lib/cucumber/ast/step_invocation.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1119" selection-end="1119" vertical-scroll-proportion="0.0">
+        <state line="60" column="0" selection-start="1761" selection-end="1761" vertical-scroll-proportion="0.3321918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/factories/actor_factories.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="57" selection-start="151" selection-end="151" vertical-scroll-proportion="0.24590164">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/actor.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="39" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/step_definitions/actor_steps.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="19" selection-start="358" selection-end="358" vertical-scroll-proportion="0.29945552">
+        <state line="25" column="10" selection-start="688" selection-end="688" vertical-scroll-proportion="0.8984375">
           <folding />
         </state>
       </provider>
