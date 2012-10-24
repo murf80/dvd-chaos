@@ -5,5 +5,5 @@ class Director < ActiveRecord::Base
 
   validates_presence_of :gender
 
-  belongs_to :dvd
+  belongs_to :dvd, foreign_key: :dvd_id
 end

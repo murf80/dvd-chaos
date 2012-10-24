@@ -5,7 +5,7 @@ FactoryGirl.define do
     name "M*A*S*H"
     asin "B00003CXB7"
     summary "M*A*S*H (1973)"
-    director {create(:director)}
-    actors {[create(:actor)]}
+    #director {create(:director)}
+    #actors {[create(:actor)]}
   end
 end

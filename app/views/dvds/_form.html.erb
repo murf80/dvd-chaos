@@ -27,6 +27,10 @@
     <%= f.label :asin %><br />
     <%= f.text_field :asin %>
   </div>
+  <div class="field">
+    <%= f.label :director %><br />
+    <%= collection_select :director, :dvd_id, Director.all, :id, :name%>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

@@ -4,6 +4,13 @@ Given /^the following director exists:$/ do |table|
   director = FactoryGirl.create(:director, :name => director_info[1][0], :gender => director_info[1][1], :dob => director_info[1][2])
 end
 
+Given /^the following directors exists:$/ do |table|
+  # table is a | Robert Altman |pending
+  table.hashes.each do |director_info|
+    director = FactoryGirl.create(:director, :name => director_info["Name"], :gender => director_info["Gender"], :dob => director_info["Dob"])
+  end
+end
+
 When /^I go to the directors page$/ do
   page.visit('/directors')
 end

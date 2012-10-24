@@ -18,9 +18,12 @@
 <p>
   <b>Asin:</b>
   <%= @dvd.asin.empty? ? '' : (link_to @dvd.asin, "http://www.amazon.com/o/ASIN/" + @dvd.asin) %>
-
 </p>
 
+<p>
+  <b>Director:</b>
+  <%= @dvd.director ? @dvd.director.name : '' %>
+</p>
 
 <%= link_to 'Edit', edit_dvd_path(@dvd) %> |
 <%= link_to 'Back', dvds_path %>

@@ -7,5 +7,5 @@ class Dvd < ActiveRecord::Base
 
   has_and_belongs_to_many :actors
 
-  has_one :director
+  has_one :director, primary_key: :dvd_id
 end

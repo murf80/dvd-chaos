@@ -68,3 +68,16 @@ When /^I should not see dvd asin link for "([^"]*)"$/ do |arg|
   link = "http://www.amazon.com/o/ASIN/" + arg
   assert !page.has_link?(arg, {:href => "http://www.amazon.com/o/ASIN/B000059H99"})
 end
+
+And /^I select "([^"]*)" for the dvd director$/ do |arg|
+  page.select arg, :from => "director_dvd_id"
+end
+
+And /^I should see the dvd director is "([^"]*)"$/ do |arg|
+  assert page.has_content?(arg)
+end
+
+Then /^I should see (\d+) directors available for the dvd$/ do |arg|
+  assert page.has_content?("Robert Altman")
+  assert page.has_content?("Burt Metcalf")
+end
