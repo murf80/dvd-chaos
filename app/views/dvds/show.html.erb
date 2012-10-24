@@ -17,7 +17,8 @@
 
 <p>
   <b>Asin:</b>
-  <%= @dvd.asin %>
+  <%= @dvd.asin.empty? ? '' : (link_to @dvd.asin, "http://www.amazon.com/o/ASIN/" + @dvd.asin) %>
+
 </p>
 
 

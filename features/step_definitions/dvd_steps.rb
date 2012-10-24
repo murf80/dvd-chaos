@@ -43,3 +43,28 @@ end
 And /^I should see one director for dvd "([^"]*)"$/ do |arg|
   assert Dvd.find_by_name(arg).director.valid?
 end
+
+Given /^I am on the new dvd page$/ do
+  page.visit('/dvds/new')
+end
+
+When /^I fill in dvd "([^"]*)" with "([^"]*)"$/ do |arg1, arg2|
+  fill_in arg1, :with=>arg2
+end
+When /^I press dvd button "([^"]*)"$/ do |arg|
+  click_button arg
+end
+
+Then /^I should see dvd message "([^"]*)"$/ do |arg|
+  assert page.has_content?(arg)
+end
+
+When /^I should see dvd asin link for "([^"]*)"$/ do |arg|
+  link = "http://www.amazon.com/o/ASIN/" + arg
+  assert page.has_link?(arg, {:href => "http://www.amazon.com/o/ASIN/B000059H99"})
+end
+
+When /^I should not see dvd asin link for "([^"]*)"$/ do |arg|
+  link = "http://www.amazon.com/o/ASIN/" + arg
+  assert !page.has_link?(arg, {:href => "http://www.amazon.com/o/ASIN/B000059H99"})
+end
