@@ -35,3 +35,11 @@ end
 Then /^The dvd should be invalid due to missing summary$/ do
   assert (@gender_error.to_s.include? "Summary can't be blank")
 end
+
+And /^I should see one actor for dvd "([^"]*)"$/ do |arg|
+  assert Dvd.find_by_name(arg).actors.length == 1
+end
+
+And /^I should see one director for dvd "([^"]*)"$/ do |arg|
+  assert Dvd.find_by_name(arg).director.valid?
+end

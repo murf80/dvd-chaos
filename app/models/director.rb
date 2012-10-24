@@ -1,5 +1,5 @@
 class Director < ActiveRecord::Base
-  attr_accessible :name, :dob, :gender
+  attr_accessible :name, :dob, :gender, :dvd
 
   validates_uniqueness_of :name
 

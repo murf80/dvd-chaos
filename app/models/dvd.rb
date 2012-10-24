@@ -1,5 +1,5 @@
 class Dvd < ActiveRecord::Base
-  attr_accessible :name, :asin, :release_date, :summary
+  attr_accessible :name, :asin, :release_date, :summary, :actors, :director
 
   validates_uniqueness_of :name
 
