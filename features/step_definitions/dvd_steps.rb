@@ -94,6 +94,20 @@ end
 And /^I should see the dvd actor is "([^"]*)"$/ do |arg|
   assert page.has_content?(arg)
 end
+
 When /^I follow dvd link "([^"]*)"$/ do |arg|
   click_link arg
+end
+
+When /^I follow dvd link "([^"]*)" and confirm it$/ do |arg|
+  click_link arg
+end
+
+When /^I am on the view page for the "([^"]*)" dvd$/ do |arg|
+  @dvd = Dvd.find_by_name(arg)
+  page.visit('/dvds/' + @dvd.id.to_s)
+end
+
+Then /^The "([^"]*)" dvd should be destroyed$/ do |arg|
+  assert (Dvd.find_by_name(arg) == nil)
 end

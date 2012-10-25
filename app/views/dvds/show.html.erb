@@ -31,4 +31,5 @@
 </p>
 
 <%= link_to 'Edit', edit_dvd_path(@dvd) %> |
+<%= link_to 'Destroy', @dvd, method: :delete, data: { confirm: 'Are you sure?' } %> |
 <%= link_to 'Back', dvds_path %>
