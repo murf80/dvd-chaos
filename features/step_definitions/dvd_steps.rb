@@ -120,5 +120,9 @@ Then /^The "([^"]*)" dvd should be destroyed$/ do |arg|
 end
 
 When /^I should see dvd release date "([^"]*)"$/ do |arg|
-  assert page.has_content?("Release date: " + arg)
+  assert page.has_content?(arg)
+end
+
+When /^I go to the dvds index page$/ do
+  page.visit('/dvds')
 end

@@ -22,6 +22,8 @@ Feature: Dvd tests
      Then I should see dvd message "Dvd was successfully created."
      And I should see dvd release date "01-28-1976"
      And I should see dvd asin link for "B000059H99"
+     When I go to the dvds index page
+     Then I should see dvd release date "01-28-1976"
 
   Scenario: Create dvd through the ui with no director, actors, or asin
     Given I am on the new dvd page
