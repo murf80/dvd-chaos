@@ -43,3 +43,11 @@ Feature: Actor tests
     When I press button "Update Actor"
     Then I should see message "Actor was successfully updated."
     And I should see date "03-28-1936"
+
+  Scenario: Ensure users can delete actors from the view page
+    Given the following actor exists:
+      | Name      | Gender | dob        |
+      | Alan Alda | male   | 01-28-1963 |
+    And I am on the view page for actor "Alan Alda"
+    When I follow link "Destroy"
+    Then The actor "Alan Alda" should be destroyed

@@ -42,3 +42,12 @@ end
 Then /^The director should be invalid due to missing gender$/ do
   assert (@gender_error.to_s.include? "Gender can't be blank")
 end
+
+When /^I am on the view page for director "([^"]*)"$/ do |arg|
+  @director = Director.find_by_name(arg)
+  page.visit('/directors/' + @director.id.to_s)
+end
+
+Then /^The director "([^"]*)" should be destroyed$/ do |arg|
+  assert (Director.find_by_name(arg) == nil)
+end
