@@ -15,10 +15,10 @@
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>
-  <div class="field">
-    <%= f.label :dob %><br />
-    <%= f.text_field :dob %>
-  </div>
+    <div class="field">
+      <%= f.label :dob %><br />
+      <%= render :partial => "shared/date_select_partial", :locals => { :f => f, :date_label => "Date of birth" } %>
+    </div>
   <div class="field">
     <%= f.label :gender %><br />
     <%= f.text_field :gender %>

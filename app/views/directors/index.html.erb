@@ -13,7 +13,7 @@
 <% @directors.each do |director| %>
   <tr>
     <td><%= director.name %></td>
-    <td><%= director.dob %></td>
+    <td><%= director.dob ? director.dob.strftime("%m-%d-%Y") : '' %></td>
     <td><%= director.gender %></td>
     <td><%= link_to 'Show', director %></td>
     <td><%= link_to 'Edit', edit_director_path(director) %></td>

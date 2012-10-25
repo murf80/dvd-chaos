@@ -40,6 +40,10 @@ class DirectorsController < ApplicationController
   # POST /directors
   # POST /directors.json
   def create
+
+    # process the dob first
+    params[:director][:dob] = DateSelectHelper.to_datetime(params[:selected_date])
+
     @director = Director.new(params[:director])
 
     respond_to do |format|
@@ -57,6 +61,9 @@ class DirectorsController < ApplicationController
   # PUT /directors/1.json
   def update
     @director = Director.find(params[:id])
+
+    # process the dob first
+    params[:director][:dob] = DateSelectHelper.to_datetime(params[:selected_date])
 
     respond_to do |format|
       if @director.update_attributes(params[:director])

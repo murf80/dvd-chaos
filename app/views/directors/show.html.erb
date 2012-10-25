@@ -7,7 +7,7 @@
 
 <p>
   <b>Dob:</b>
-  <%= @director.dob %>
+  <%= @director.dob ? @director.dob.strftime("%m-%d-%Y") : '' %>
 </p>
 
 <p>
