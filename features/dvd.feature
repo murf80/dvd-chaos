@@ -91,6 +91,8 @@ Feature: Dvd tests
     And I should see the dvd director is "Robert Altman"
     And I should see the dvd actor is "Alan Alda"
     And I should see date "01-28-1976"
+    When I am on the view page for actor "Alan Alda"
+    Then I should see message "M*A*S*H"
 
   Scenario: Update actors on a dvd
     Given the following actors exist:
