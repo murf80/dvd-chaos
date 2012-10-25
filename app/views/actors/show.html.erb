@@ -15,6 +15,11 @@
   <%= @actor.gender %>
 </p>
 
+<p>
+  <b>Movies:</b>
+  <%= @actor.dvds ? @actor.dvds.all.collect{|x| x.name}.join(", ") : '' %>
+</p>
+
 
 <%= link_to 'Edit', edit_actor_path(@actor) %> |
 <%= link_to 'Back', actors_path %>
