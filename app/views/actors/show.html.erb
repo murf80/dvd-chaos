@@ -6,8 +6,8 @@
 </p>
 
 <p>
-  <b>Dob:</b>
-  <%= @actor.dob %>
+  <b>Date of birth:</b>
+  <%= @actor.dob ? @actor.dob.strftime("%m-%d-%Y") : '' %>
 </p>
 
 <p>

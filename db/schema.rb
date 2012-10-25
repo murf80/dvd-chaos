@@ -11,14 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121025153435) do
+ActiveRecord::Schema.define(:version => 20121025180210) do
 
   create_table "actors", :force => true do |t|
     t.string   "name"
-    t.string   "dob"
+    t.datetime "dob",        :limit => 255
     t.string   "gender"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
   end
 
   add_index "actors", ["name"], :name => "index_actors_on_name", :unique => true

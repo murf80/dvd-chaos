@@ -1,4 +1,7 @@
 class ActorsController < ApplicationController
+
+  include DateSelectHelper
+
   # GET /actors
   # GET /actors.json
   def index
@@ -40,6 +43,10 @@ class ActorsController < ApplicationController
   # POST /actors
   # POST /actors.json
   def create
+
+    # process the dob first
+    params[:actor][:dob] = DateSelectHelper.to_datetime(params[:selected_date])
+
     @actor = Actor.new(params[:actor])
 
     respond_to do |format|
@@ -57,6 +64,9 @@ class ActorsController < ApplicationController
   # PUT /actors/1.json
   def update
     @actor = Actor.find(params[:id])
+
+    # process the dob first
+    params[:actor][:dob] = DateSelectHelper.to_datetime(params[:selected_date])
 
     respond_to do |format|
       if @actor.update_attributes(params[:actor])

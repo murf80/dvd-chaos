@@ -13,7 +13,7 @@
 <% @actors.each do |actor| %>
   <tr>
     <td><%= actor.name %></td>
-    <td><%= actor.dob %></td>
+    <td><%= actor.dob ? actor.dob.strftime("%m-%d-%Y") : '' %></td>
     <td><%= actor.gender %></td>
     <td><%= link_to 'Show', actor %></td>
     <td><%= link_to 'Edit', edit_actor_path(actor) %></td>
