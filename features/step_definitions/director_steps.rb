@@ -42,37 +42,3 @@ end
 Then /^The director should be invalid due to missing gender$/ do
   assert (@gender_error.to_s.include? "Gender can't be blank")
 end
-
-When /^I fill in director "([^"]*)" with "([^"]*)"$/ do |arg1, arg2|
-  fill_in arg1, :with=>arg2
-end
-
-When /^I fill in director date of birth with month "([^"]*)", day "([^"]*)", and year "([^"]*)"$/ do |arg1, arg2, arg3|
-  page.select arg1, :from => "selected_date[value(2i)]"
-  page.select arg2, :from => "selected_date[value(3i)]"
-  page.select arg3, :from => "selected_date[value(1i)]"
-end
-
-When /^I press director button "([^"]*)"$/ do |arg|
-  click_button arg
-end
-
-Then /^I should see director message "([^"]*)"$/ do |arg|
-  assert page.has_content?(arg)
-end
-
-When /^I go to the directors index page$/ do
-  page.visit('/directors')
-end
-
-Given /^I am on the new director page$/ do
-  page.visit('/directors/new')
-end
-
-When /^I should see director date of birth "([^"]*)"$/ do |arg|
-  assert page.has_content?(arg)
-end
-
-When /^I follow director link "([^"]*)"$/ do |arg|
-  click_link arg
-end

@@ -4,10 +4,6 @@ Given /^the following dvd exists:$/ do |table|
   dvd = FactoryGirl.create(:dvd, :name => dvd_info[1][0], :summary => dvd_info[1][1])
 end
 
-When /^I go to the dvds page$/ do
-  page.visit('/dvds')
-end
-
 Then /^I should see dvd "([^"]*)"$/ do |arg|
   assert page.has_content?(arg)
 end
@@ -42,28 +38,6 @@ end
 
 And /^I should see one director for dvd "([^"]*)"$/ do |arg|
   assert Dvd.find_by_name(arg).director.valid?
-end
-
-Given /^I am on the new dvd page$/ do
-  page.visit('/dvds/new')
-end
-
-When /^I fill in dvd "([^"]*)" with "([^"]*)"$/ do |arg1, arg2|
-  fill_in arg1, :with=>arg2
-end
-
-When /^I fill in dvd release date with month "([^"]*)", day "([^"]*)", and year "([^"]*)"$/ do |arg1, arg2, arg3|
-  page.select arg1, :from => "selected_date[value(2i)]"
-  page.select arg2, :from => "selected_date[value(3i)]"
-  page.select arg3, :from => "selected_date[value(1i)]"
-end
-
-When /^I press dvd button "([^"]*)"$/ do |arg|
-  click_button arg
-end
-
-Then /^I should see dvd message "([^"]*)"$/ do |arg|
-  assert page.has_content?(arg)
 end
 
 When /^I should see dvd asin link for "([^"]*)"$/ do |arg|
@@ -102,14 +76,6 @@ And /^I should see the dvd actor is "([^"]*)"$/ do |arg|
   assert page.has_content?(arg)
 end
 
-When /^I follow dvd link "([^"]*)"$/ do |arg|
-  click_link arg
-end
-
-When /^I follow dvd link "([^"]*)" and confirm it$/ do |arg|
-  click_link arg
-end
-
 When /^I am on the view page for the "([^"]*)" dvd$/ do |arg|
   @dvd = Dvd.find_by_name(arg)
   page.visit('/dvds/' + @dvd.id.to_s)
@@ -119,10 +85,5 @@ Then /^The "([^"]*)" dvd should be destroyed$/ do |arg|
   assert (Dvd.find_by_name(arg) == nil)
 end
 
-When /^I should see dvd release date "([^"]*)"$/ do |arg|
-  assert page.has_content?(arg)
-end
 
-When /^I go to the dvds index page$/ do
-  page.visit('/dvds')
-end
+

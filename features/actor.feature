@@ -20,26 +20,26 @@ Feature: Actor tests
     Then The actor should be invalid
 
   Scenario: Create actor through the ui
-    Given I am on the new actor page
-    And I fill in actor "Name" with "Alan Alda"
-    And I fill in actor date of birth with month "January", day "28", and year "1936"
-    And I fill in actor "Gender" with "male"
-    When I press actor button "Create Actor"
-    Then I should see actor message "Actor was successfully created."
-    And I should see actor date of birth "01-28-1936"
-    When I go to the actors index page
-    Then I should see actor date of birth "01-28-1936"
+    Given I am on the new "actors" page
+    And I fill in "Name" with "Alan Alda"
+    And I fill in date with month "January", day "28", and year "1936"
+    And I fill in "Gender" with "male"
+    When I press button "Create Actor"
+    Then I should see message "Actor was successfully created."
+    And I should see date "01-28-1936"
+    When I go to the "actors" index page
+    Then I should see date "01-28-1936"
 
   Scenario: Update date of birth on an actor
-    Given I am on the new actor page
-    And I fill in actor "Name" with "Alan Alda"
-    And I fill in actor date of birth with month "January", day "28", and year "1936"
-    And I fill in actor "Gender" with "male"
-    When I press actor button "Create Actor"
-    Then I should see actor message "Actor was successfully created."
-    And I should see actor date of birth "01-28-1936"
-    When I follow actor link "Edit"
-    And I fill in actor date of birth with month "March", day "28", and year "1936"
-    When I press actor button "Update Actor"
-    Then I should see actor message "Actor was successfully updated."
-    And I should see actor date of birth "03-28-1936"
+    Given I am on the new "actors" page
+    And I fill in "Name" with "Alan Alda"
+    And I fill in date with month "January", day "28", and year "1936"
+    And I fill in "Gender" with "male"
+    When I press button "Create Actor"
+    Then I should see message "Actor was successfully created."
+    And I should see date "01-28-1936"
+    When I follow link "Edit"
+    And I fill in date with month "March", day "28", and year "1936"
+    When I press button "Update Actor"
+    Then I should see message "Actor was successfully updated."
+    And I should see date "03-28-1936"
