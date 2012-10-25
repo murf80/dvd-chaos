@@ -4,6 +4,7 @@ class Actor < ActiveRecord::Base
   validates_uniqueness_of :name
 
   validates_presence_of :gender
+  validates_inclusion_of :gender, :in => [ "male", "female" ]
 
   has_and_belongs_to_many :dvds
 end

@@ -4,6 +4,7 @@ class Director < ActiveRecord::Base
   validates_uniqueness_of :name
 
   validates_presence_of :gender
+  validates_inclusion_of :gender, :in => [ "male", "female" ]
 
   belongs_to :dvd, foreign_key: :dvd_id
 end
