@@ -94,3 +94,6 @@ end
 And /^I should see the dvd actor is "([^"]*)"$/ do |arg|
   assert page.has_content?(arg)
 end
+When /^I follow dvd link "([^"]*)"$/ do |arg|
+  click_link arg
+end

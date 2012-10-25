@@ -68,6 +68,24 @@ class DvdsController < ApplicationController
 
     respond_to do |format|
       if @dvd.update_attributes(params[:dvd])
+
+
+        if params[:director] and params[:director]["id"]
+          # why does this not get saved?  I'm missing something here
+          @dvd.director = Director.find(params[:director]["id"])
+        else
+          @dvd.director = nil
+        end
+        @actor_ids = params[:actors] ? params[:actors]["ids"] : nil
+        if @actor_ids
+          @actor_ids.shift
+          @dvd.actors = Array.new
+          @dvd.actors <<  Actor.find(@actor_ids)
+        else
+          @dvd.actors = nil
+        end
+
+
         format.html { redirect_to @dvd, notice: 'Dvd was successfully updated.' }
         format.json { head :no_content }
       else

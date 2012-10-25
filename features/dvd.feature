@@ -79,6 +79,25 @@ Feature: Dvd tests
     And I should see the dvd director is "Robert Altman"
     And I should see the dvd actor is "Alan Alda"
 
+  Scenario: Update actors on a dvd
+    Given the following actors exist:
+      | Name      | Gender | dob        |
+      | Alan Alda | male   | 01-28-1963 |
+      | Mike Farrel | male   | 04-10-1915 |
+    And I am on the new dvd page
+    Given I fill in dvd "Name" with "M*A*S*H"
+    And I fill in dvd "Release date" with "01-28-1976"
+    And I fill in dvd "Summary" with "M*A*S*H rocks"
+    And I select "Alan Alda" for the dvd actor
+    When I press dvd button "Create Dvd"
+    Then I should see dvd message "Dvd was successfully created."
+    And I should see the dvd actor is "Alan Alda"
+    When I follow dvd link "Edit"
+    And I select "Mike Farrel" for the dvd actor
+    When I press dvd button "Update Dvd"
+    Then I should see dvd message "Dvd was successfully updated."
+    And I should see the dvd actor is "Mike Farrel"
+
 
 
 
