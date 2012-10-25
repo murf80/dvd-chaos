@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121025185249) do
+ActiveRecord::Schema.define(:version => 20121025204232) do
 
   create_table "actors", :force => true do |t|
     t.string   "name"
@@ -37,10 +37,8 @@ ActiveRecord::Schema.define(:version => 20121025185249) do
     t.string   "gender"
     t.datetime "created_at",                :null => false
     t.datetime "updated_at",                :null => false
-    t.integer  "dvd_id"
   end
 
-  add_index "directors", ["dvd_id"], :name => "index_directors_on_dvd_id"
   add_index "directors", ["name"], :name => "index_directors_on_name", :unique => true
 
   create_table "dvds", :force => true do |t|
@@ -50,8 +48,10 @@ ActiveRecord::Schema.define(:version => 20121025185249) do
     t.string   "asin"
     t.datetime "created_at",                  :null => false
     t.datetime "updated_at",                  :null => false
+    t.integer  "director_id"
   end
 
+  add_index "dvds", ["director_id"], :name => "index_dvds_on_director_id"
   add_index "dvds", ["name"], :name => "index_dvds_on_name", :unique => true
 
 end

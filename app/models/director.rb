@@ -1,5 +1,5 @@
 class Director < ActiveRecord::Base
-  attr_accessible :name, :dob, :gender, :dvd
+  attr_accessible :name, :dob, :gender, :dvds
 
   validates_uniqueness_of :name
   validates_presence_of :name
@@ -7,5 +7,5 @@ class Director < ActiveRecord::Base
   validates_presence_of :gender
   validates_inclusion_of :gender, :in => [ "male", "female" ]
 
-  belongs_to :dvd, foreign_key: :dvd_id
+  has_many :dvds
 end

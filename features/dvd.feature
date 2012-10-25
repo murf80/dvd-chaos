@@ -52,7 +52,7 @@ Feature: Dvd tests
     Then The "M*A*S*H" dvd should be destroyed
 
   Scenario: Create dvd through the ui with director and no actors
-    Given the following directors exists:
+    Given the following directors exist:
       | Name      | Gender | dob        |
       | Robert Altman | male   | 01-28-1963 |
       | Burt Metcalf | male   | 04-10-1915 |
@@ -69,7 +69,7 @@ Feature: Dvd tests
     And I should see the dvd director is "Robert Altman"
 
   Scenario: Create dvd through the ui with director and actors
-    Given the following directors exists:
+    Given the following directors exist:
       | Name      | Gender | dob        |
       | Robert Altman | male   | 01-28-1963 |
       | Burt Metcalf | male   | 04-10-1915 |
@@ -93,6 +93,28 @@ Feature: Dvd tests
     And I should see date "01-28-1976"
     When I am on the view page for actor "Alan Alda"
     Then I should see message "M*A*S*H"
+    When I am on the view page for director "Robert Altman"
+    Then I should see message "M*A*S*H"
+
+  Scenario: Update director on a dvd
+    Given the following directors exist:
+      | Name      | Gender | dob        |
+      | Robert Altman | male   | 02-20-1925 |
+      | Alan Alda | male   | 02-20-1925 |
+    And I am on the new "dvds" page
+    Given I fill in "Name" with "M*A*S*H"
+    And I fill in date with month "January", day "28", and year "1976"
+    And I fill in "Summary" with "M*A*S*H rocks"
+    And I select "Alan Alda" for the dvd director
+    When I press button "Create Dvd"
+    Then I should see message "Dvd was successfully created."
+    And I should see the dvd director is "Alan Alda"
+    And I should see date "01-28-1976"
+    When I follow link "Edit"
+    And I select "Robert Altman" for the dvd director
+    When I press button "Update Dvd"
+    Then I should see message "Dvd was successfully updated."
+    And I should see the dvd actor is "Robert Altman"
 
   Scenario: Update actors on a dvd
     Given the following actors exist:

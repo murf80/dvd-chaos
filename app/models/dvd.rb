@@ -9,6 +9,6 @@ class Dvd < ActiveRecord::Base
   has_and_belongs_to_many :actors
   validates_associated :actors
 
-  has_one :director, primary_key: :dvd_id
+  belongs_to :director, foreign_key: :director_id
   validates_associated :director
 end

@@ -15,6 +15,10 @@
   <%= @director.gender %>
 </p>
 
+<p>
+  <b>Movies:</b>
+  <%= @director.dvds ? @director.dvds.all.collect{|x| x.name}.join(", ") : '' %>
+</p>
 
 <%= link_to 'Edit', edit_director_path(@director) %> |
 <%= link_to 'Destroy', @director, method: :delete, data: { confirm: 'Are you sure?' } %> |

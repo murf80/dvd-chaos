@@ -49,16 +49,18 @@ class DvdsController < ApplicationController
 
     @dvd = Dvd.new(params[:dvd])
 
+    if params[:director] and params[:director]["id"]
+      @dvd.director = Director.find(params[:director]["id"])
+    end
+
+    @actor_ids = params[:actors] ? params[:actors]["ids"] : nil
+    if @actor_ids
+      @actor_ids.shift
+      @dvd.actors <<  Actor.find(@actor_ids)
+    end
+
     respond_to do |format|
       if @dvd.save
-        if params[:director] and params[:director]["id"]
-          @dvd.director = Director.find(params[:director]["id"])
-        end
-        @actor_ids = params[:actors] ? params[:actors]["ids"] : nil
-        if @actor_ids
-          @actor_ids.shift
-          @dvd.actors <<  Actor.find(@actor_ids)
-        end
         format.html { redirect_to @dvd, notice: 'Dvd was successfully created.' }
         format.json { render json: @dvd, status: :created, location: @dvd }
       else
@@ -93,8 +95,9 @@ class DvdsController < ApplicationController
         else
           @dvd.actors = nil
         end
+      end
 
-
+      if @dvd.save
         format.html { redirect_to @dvd, notice: 'Dvd was successfully updated.' }
         format.json { head :no_content }
       else
