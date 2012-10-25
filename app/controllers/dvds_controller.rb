@@ -71,7 +71,7 @@ class DvdsController < ApplicationController
 
 
         if params[:director] and params[:director]["id"]
-          # why does this not get saved?  I'm missing something here
+          # TODO why does this not get saved?  I'm missing something here
           @dvd.director = Director.find(params[:director]["id"])
         else
           @dvd.director = nil
