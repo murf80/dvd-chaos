@@ -51,6 +51,13 @@ end
 When /^I fill in dvd "([^"]*)" with "([^"]*)"$/ do |arg1, arg2|
   fill_in arg1, :with=>arg2
 end
+
+When /^I fill in dvd release date with month "([^"]*)", day "([^"]*)", and year "([^"]*)"$/ do |arg1, arg2, arg3|
+  page.select arg1, :from => "selected_date[value(2i)]"
+  page.select arg2, :from => "selected_date[value(3i)]"
+  page.select arg3, :from => "selected_date[value(1i)]"
+end
+
 When /^I press dvd button "([^"]*)"$/ do |arg|
   click_button arg
 end
@@ -110,4 +117,8 @@ end
 
 Then /^The "([^"]*)" dvd should be destroyed$/ do |arg|
   assert (Dvd.find_by_name(arg) == nil)
+end
+
+When /^I should see dvd release date "([^"]*)"$/ do |arg|
+  assert page.has_content?("Release date: " + arg)
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121025052220) do
+ActiveRecord::Schema.define(:version => 20121025153435) do
 
   create_table "actors", :force => true do |t|
     t.string   "name"
@@ -45,11 +45,11 @@ ActiveRecord::Schema.define(:version => 20121025052220) do
 
   create_table "dvds", :force => true do |t|
     t.string   "name"
-    t.string   "release_date"
+    t.datetime "release_date", :limit => 255
     t.string   "summary"
     t.string   "asin"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at",                  :null => false
+    t.datetime "updated_at",                  :null => false
   end
 
   add_index "dvds", ["name"], :name => "index_dvds_on_name", :unique => true

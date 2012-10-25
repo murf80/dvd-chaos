@@ -1,0 +1,2 @@
+<%= date_select("selected_date", "value", :start_year => Time.now.year-100, :end_year => Time.now.year-13,
+                  :use_month_numbers => false, :order => [:day, :month, :year], :default => Time.now-30.years)%>

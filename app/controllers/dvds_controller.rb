@@ -1,4 +1,7 @@
 class DvdsController < ApplicationController
+
+  include DateSelectHelper
+
   # GET /dvds
   # GET /dvds.json
   def index
@@ -40,6 +43,10 @@ class DvdsController < ApplicationController
   # POST /dvds
   # POST /dvds.json
   def create
+
+    # process the release date first
+    params[:dvd][:release_date] = DateSelectHelper.to_datetime(params[:selected_date])
+
     @dvd = Dvd.new(params[:dvd])
 
     respond_to do |format|
@@ -66,9 +73,11 @@ class DvdsController < ApplicationController
   def update
     @dvd = Dvd.find(params[:id])
 
+    # process the release date first
+    params[:dvd][:release_date] = DateSelectHelper.to_datetime(params[:selected_date])
+
     respond_to do |format|
       if @dvd.update_attributes(params[:dvd])
-
 
         if params[:director] and params[:director]["id"]
           # TODO why does this not get saved?  I'm missing something here
