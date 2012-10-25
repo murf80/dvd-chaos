@@ -43,6 +43,14 @@ Feature: Dvd tests
     When I follow link "Destroy"
     Then The "M*A*S*H" dvd should be destroyed
 
+  Scenario: Ensure users can delete DVDs from the index page
+    Given the following dvd exists:
+      | Name      | Summary |
+      | M*A*S*H | M*A*S*H (1973)   |
+    And I go to the "dvds" index page
+    When I follow link "Destroy"
+    Then The "M*A*S*H" dvd should be destroyed
+
   Scenario: Create dvd through the ui with director and no actors
     Given the following directors exists:
       | Name      | Gender | dob        |

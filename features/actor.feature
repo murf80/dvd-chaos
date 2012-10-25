@@ -51,3 +51,11 @@ Feature: Actor tests
     And I am on the view page for actor "Alan Alda"
     When I follow link "Destroy"
     Then The actor "Alan Alda" should be destroyed
+
+  Scenario: Ensure users can delete directors from the index page
+    Given the following actor exists:
+      | Name      | Gender | dob        |
+      | Alan Alda | male   | 01-28-1963 |
+    And I go to the "actors" index page
+    When I follow link "Destroy"
+    Then The actor "Alan Alda" should be destroyed

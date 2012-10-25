@@ -43,3 +43,19 @@ Feature: Director tests
     When I press button "Update Director"
     Then I should see message "Director was successfully updated."
     And I should see date "03-28-1936"
+
+  Scenario: Ensure users can delete directors from the view page
+    Given the following director exists:
+      | Name      | Gender | dob        |
+      | Robert Altman | male   | 02-20-1925 |
+    And I am on the view page for director "Robert Altman"
+    When I follow link "Destroy"
+    Then The director "Robert Altman" should be destroyed
+
+  Scenario: Ensure users can delete directors from the index page
+    Given the following director exists:
+      | Name      | Gender | dob        |
+      | Robert Altman | male   | 02-20-1925 |
+    And I go to the "directors" index page
+    When I follow link "Destroy"
+    Then The director "Robert Altman" should be destroyed
