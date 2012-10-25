@@ -25,5 +25,10 @@
   <%= @dvd.director ? @dvd.director.name : '' %>
 </p>
 
+<p>
+  <b>Cast:</b>
+  <%= @dvd.actors ? @dvd.actors.all.collect{|x| x.name}.join(", ") : '' %>
+</p>
+
 <%= link_to 'Edit', edit_dvd_path(@dvd) %> |
 <%= link_to 'Back', dvds_path %>

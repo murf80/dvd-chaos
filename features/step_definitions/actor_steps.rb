@@ -4,6 +4,13 @@ Given /^the following actor exists:$/ do |table|
   actor = FactoryGirl.create(:actor, :name => actor_info[1][0], :gender => actor_info[1][1], :dob => actor_info[1][2])
 end
 
+Given /^the following actors exist:$/ do |table|
+  # table is a | Robert Altman |pending
+  table.hashes.each do |actor_info|
+    actor = FactoryGirl.create(:actor, :name => actor_info["Name"], :gender => actor_info["Gender"], :dob => actor_info["Dob"])
+  end
+end
+
 When /^I go to the actors page$/ do
   page.visit('/actors')
 end

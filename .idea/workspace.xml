@@ -3,14 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="9bfd91d6-cb1a-4958-87a4-9f2c575f5676" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/director.rb" afterPath="$PROJECT_DIR$/app/models/director.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/dvd.rb" afterPath="$PROJECT_DIR$/app/models/dvd.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/dvds_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/dvds_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/dvds/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/dvds/_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/dvds/show.html.erb" afterPath="$PROJECT_DIR$/app/views/dvds/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/dvd.feature" afterPath="$PROJECT_DIR$/features/dvd.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/director_steps.rb" afterPath="$PROJECT_DIR$/features/step_definitions/director_steps.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/actor_steps.rb" afterPath="$PROJECT_DIR$/features/step_definitions/actor_steps.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/dvd_steps.rb" afterPath="$PROJECT_DIR$/features/step_definitions/dvd_steps.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/factories/dvd_factories.rb" afterPath="$PROJECT_DIR$/test/factories/dvd_factories.rb" />
     </list>
     <ignored path="dvd-chaos.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,28 +31,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dvd.feature" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/dvd.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="55" selection-start="2374" selection-end="2374" vertical-scroll-proportion="-6.9615383">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/dvds/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="45" selection-start="379" selection-end="379" vertical-scroll-proportion="-3.1666667">
+            <state line="29" column="56" selection-start="464" selection-end="464" vertical-scroll-proportion="-18.125">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dvd_factories.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/factories/dvd_factories.rb">
+      <file leaf-file-name="dvd.feature" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/dvd.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="5" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
+            <state line="63" column="0" selection-start="2615" selection-end="2615" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -63,25 +52,7 @@
       <file leaf-file-name="dvd_steps.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/features/step_definitions/dvd_steps.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="59" selection-start="2152" selection-end="2152" vertical-scroll-proportion="0.53070176">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="director_steps.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/step_definitions/director_steps.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="28" selection-start="644" selection-end="644" vertical-scroll-proportion="-2.1538463">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/dvds/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="63" selection-start="842" selection-end="842" vertical-scroll-proportion="-5.2083335">
+            <state line="89" column="53" selection-start="2552" selection-end="2552" vertical-scroll-proportion="0.38628158">
               <folding />
             </state>
           </provider>
@@ -90,34 +61,7 @@
       <file leaf-file-name="dvds_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/dvds_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="callbacks.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194@global/gems/activesupport-3.2.8/lib/active_support/callbacks.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="414" column="0" selection-start="13676" selection-end="13676" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dvd.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/dvd.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="40" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="director.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/director.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="19" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
+            <state line="50" column="51" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -140,21 +84,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/test/functional/actors_controller_test.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20121023031148_create_actors_dvds.rb" />
         <option value="$PROJECT_DIR$/test/functional/directors_controller_test.rb" />
         <option value="$PROJECT_DIR$/test/functional/dvds_controller_test.rb" />
         <option value="$PROJECT_DIR$/features/actor.feature" />
         <option value="$PROJECT_DIR$/config/cucumber.yml" />
-        <option value="$PROJECT_DIR$/features/step_definitions/actor_steps.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20121024013500_director_add_dvd_id.rb" />
         <option value="$PROJECT_DIR$/app/models/director.rb" />
         <option value="$PROJECT_DIR$/app/models/dvd.rb" />
         <option value="$PROJECT_DIR$/test/factories/dvd_factories.rb" />
-        <option value="$PROJECT_DIR$/app/views/dvds/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/dvds/_form.html.erb" />
         <option value="$PROJECT_DIR$/features/step_definitions/director_steps.rb" />
+        <option value="$PROJECT_DIR$/app/views/dvds/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/dvds/show.html.erb" />
         <option value="$PROJECT_DIR$/features/dvd.feature" />
+        <option value="$PROJECT_DIR$/features/step_definitions/actor_steps.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/dvds_controller.rb" />
         <option value="$PROJECT_DIR$/features/step_definitions/dvd_steps.rb" />
       </list>
     </option>
@@ -169,7 +113,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1280" />
-    <option name="height" value="729" />
+    <option name="height" value="730" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -592,7 +536,7 @@
       <recent name="$PROJECT_DIR$/app/models" />
     </key>
   </component>
-  <component name="RunManager" selected="Rake.db:test:prepare">
+  <component name="RunManager" selected="Cucumber.dvd">
     <configuration default="false" name="db:test:prepare" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
       <module name="dvd-chaos" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -679,6 +623,30 @@
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
       <method />
     </configuration>
+    <configuration default="false" name="db:test:purge" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="dvd-chaos" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:test:purge" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
     <configuration default="false" name="dvd" type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="dvd-chaos" />
@@ -713,30 +681,6 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
       <RunnerSettings RunnerId="RubyDebugRunner" />
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="db:test:purge" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
-      <module name="dvd-chaos" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:test:purge" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -1029,15 +973,15 @@
       <item index="4" class="java.lang.String" itemvalue="Rake.db:test:prepare" />
       <item index="5" class="java.lang.String" itemvalue="Rake.db:migrate" />
       <item index="6" class="java.lang.String" itemvalue="Cucumber.director" />
-      <item index="7" class="java.lang.String" itemvalue="Cucumber.dvd" />
-      <item index="8" class="java.lang.String" itemvalue="Rake.db:test:purge" />
+      <item index="7" class="java.lang.String" itemvalue="Rake.db:test:purge" />
+      <item index="8" class="java.lang.String" itemvalue="Cucumber.dvd" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Rake.db:test:prepare" />
-        <item index="1" class="java.lang.String" itemvalue="Rake.db:test:purge" />
-        <item index="2" class="java.lang.String" itemvalue="Rake.db:migrate" />
-        <item index="3" class="java.lang.String" itemvalue="Cucumber.dvd" />
+        <item index="0" class="java.lang.String" itemvalue="Cucumber.dvd" />
+        <item index="1" class="java.lang.String" itemvalue="Rake.db:test:prepare" />
+        <item index="2" class="java.lang.String" itemvalue="Rake.db:test:purge" />
+        <item index="3" class="java.lang.String" itemvalue="Rake.db:migrate" />
         <item index="4" class="java.lang.String" itemvalue="Cucumber.dvd" />
       </list>
     </recent_temporary>
@@ -1070,18 +1014,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="729" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1280" height="730" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296355" sideWeight="0.49675852" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.6703645" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32333875" sideWeight="0.18829113" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32333875" sideWeight="0.2800633" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5205696" sideWeight="0.65072936" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32333875" sideWeight="0.18799368" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32333875" sideWeight="0.28120062" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.51974726" sideWeight="0.65072936" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5205696" sideWeight="0.34359807" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.51974726" sideWeight="0.34359807" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3528481" sideWeight="0.7236629" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296355" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1147,55 +1091,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/features/step_definitions/actor_steps.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="32" selection-start="348" selection-end="377" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194@global/gems/activerecord-3.2.8/lib/active_record/base.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="480" column="10" selection-start="21504" selection-end="21504" vertical-scroll-proportion="0.33195022">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.2.8/lib/action_controller/metal/implicit_render.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194@global/gems/activesupport-3.2.8/lib/active_support/callbacks.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="414" column="0" selection-start="13676" selection-end="13676" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/actor.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="4" selection-start="443" selection-end="560" vertical-scroll-proportion="0.47244096">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/dvds_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20121024013500_director_add_dvd_id.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1210,9 +1105,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/functional/actors_controller_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/dvd.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="40" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0">
+        <state line="7" column="25" selection-start="177" selection-end="200" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dvds/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="39" selection-start="951" selection-end="951" vertical-scroll-proportion="-17.708334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.2.8/lib/action_controller/metal.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="143" column="0" selection-start="4448" selection-end="4448" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194@global/gems/activesupport-3.2.8/lib/active_support/hash_with_indifferent_access.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="805" selection-end="805" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.2.8/lib/action_controller/metal/rescue.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194@global/gems/activerecord-3.2.8/lib/active_record/querying.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/dvds/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="56" selection-start="464" selection-end="464" vertical-scroll-proportion="-18.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/director_steps.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="259" selection-end="543" vertical-scroll-proportion="-3.4615386">
           <folding />
         </state>
       </provider>
@@ -1224,37 +1175,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/dvds/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/actor_steps.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="63" selection-start="842" selection-end="842" vertical-scroll-proportion="-5.2083335">
+        <state line="6" column="34" selection-start="268" selection-end="268" vertical-scroll-proportion="-1.4431819">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/dvds/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/dvds_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="45" selection-start="379" selection-end="379" vertical-scroll-proportion="-3.1666667">
+        <state line="50" column="51" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/dvd.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="55" selection-start="2374" selection-end="2374" vertical-scroll-proportion="-6.9615383">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/step_definitions/director_steps.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="28" selection-start="644" selection-end="644" vertical-scroll-proportion="-2.1538463">
+        <state line="63" column="0" selection-start="2615" selection-end="2615" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/step_definitions/dvd_steps.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="59" selection-start="2152" selection-end="2152" vertical-scroll-proportion="0.53070176">
+        <state line="89" column="53" selection-start="2552" selection-end="2552" vertical-scroll-proportion="0.38628158">
           <folding />
         </state>
       </provider>

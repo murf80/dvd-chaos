@@ -70,7 +70,7 @@ When /^I should not see dvd asin link for "([^"]*)"$/ do |arg|
 end
 
 And /^I select "([^"]*)" for the dvd director$/ do |arg|
-  page.select arg, :from => "director_dvd_id"
+  page.select arg, :from => "director_id"
 end
 
 And /^I should see the dvd director is "([^"]*)"$/ do |arg|
@@ -80,4 +80,17 @@ end
 Then /^I should see (\d+) directors available for the dvd$/ do |arg|
   assert page.has_content?("Robert Altman")
   assert page.has_content?("Burt Metcalf")
+end
+
+And /^I should see (\d+) actors available for the dvd$/ do |arg|
+  assert page.has_content?("Alan Alda")
+  assert page.has_content?("Mike Farrel")
+end
+
+And /^I select "([^"]*)" for the dvd actor$/ do |arg|
+  page.select arg, :from => "actors_ids"
+end
+
+And /^I should see the dvd actor is "([^"]*)"$/ do |arg|
+  assert page.has_content?(arg)
 end
