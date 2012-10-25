@@ -33,7 +33,7 @@
   </div>
   <div class="field">
     <%= f.label :actors %><br />
-    <%= collection_select :actors, :ids, Actor.all, :id, :name, {}, {:multiple => true, :size => 10} %>
+    <%= collection_select :actors, :ids, Actor.all, :id, :name, {:selected => @dvd.actors.collect {|x| x.id.to_i}}, {:multiple => true, :size => 10} %>
   </div>
   <div class="actions">
     <%= f.submit %>
