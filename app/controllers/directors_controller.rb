@@ -46,6 +46,13 @@ class DirectorsController < ApplicationController
 
     @director = Director.new(params[:director])
 
+    # check for new dvds
+    @dvd_ids = params[:dvds] ? params[:dvds]["ids"] : nil
+    if @dvd_ids
+      @dvd_ids.shift
+      @director.dvds <<  Dvd.find(@dvd_ids)
+    end
+
     respond_to do |format|
       if @director.save
         format.html { redirect_to @director, notice: 'Director was successfully created.' }
@@ -67,6 +74,17 @@ class DirectorsController < ApplicationController
 
     respond_to do |format|
       if @director.update_attributes(params[:director])
+
+        # check for new dvds
+        @dvd_ids = params[:dvds] ? params[:dvds]["ids"] : nil
+        if @dvd_ids
+          @dvd_ids.shift
+          @director.dvds = Array.new
+          @director.dvds <<  Dvd.find(@dvd_ids)
+        else
+          @director.dvds = nil
+        end
+
         format.html { redirect_to @director, notice: 'Director was successfully updated.' }
         format.json { head :no_content }
       else

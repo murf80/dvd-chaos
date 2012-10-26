@@ -59,3 +59,38 @@ Feature: Director tests
     And I go to the "directors" index page
     When I follow link "Destroy"
     Then The director "Robert Altman" should be destroyed
+
+  Scenario: Create director through the ui with dvds
+    Given the following dvd exists:
+      | Name      | Summary |
+      | M*A*S*H | M*A*S*H (1973)   |
+    Given I am on the new "directors" page
+    And I fill in "Name" with "Alan Alda"
+    And I fill in date with month "January", day "28", and year "1936"
+    And I choose "director_gender_male"
+    And I select "M*A*S*H" for the dvd name
+    When I press button "Create Director"
+    Then I should see message "Director was successfully created."
+    And I should see date "01-28-1936"
+    When I am on the view page for director "Alan Alda"
+    Then I should see date "01-28-1936"
+    And I should see dvd name is "M*A*S*H"
+
+  Scenario: Update director dvds through the ui
+    Given the following dvds exist:
+      | Name      | Summary |
+      | M*A*S*H | M*A*S*H (1973)   |
+      | RAD | RAD (1986)   |
+    Given I am on the new "directors" page
+    And I fill in "Name" with "Alan Alda"
+    And I fill in date with month "January", day "28", and year "1936"
+    And I choose "director_gender_male"
+    And I select "M*A*S*H" for the dvd name
+    When I press button "Create Director"
+    Then I should see message "Director was successfully created."
+    When I follow link "Edit"
+    And I select "RAD" for the dvd name
+    When I press button "Update Director"
+    Then I should see message "Director was successfully updated."
+    When I am on the view page for director "Alan Alda"
+    And I should see dvd name is "RAD"
