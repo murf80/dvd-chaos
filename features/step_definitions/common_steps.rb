@@ -35,3 +35,7 @@ end
 When /^I choose "([^"]*)"$/ do |arg|
   choose(arg)
 end
+
+When /^I select "([^"]*)" for the search type$/ do |arg|
+  page.select arg, :from => "search_by"
+end

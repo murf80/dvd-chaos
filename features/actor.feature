@@ -94,3 +94,29 @@ Feature: Actor tests
     Then I should see message "Actor was successfully updated."
     When I am on the view page for actor "Alan Alda"
     And I should see dvd name is "RAD"
+
+  Scenario: Search directors by partial name
+    Given the following director exists:
+      | Name      | Gender | dob        |
+      | Alan Alda | male   | 02-20-1925 |
+    And I go to the "directors" index page
+    And I select "Name" for the search type
+    And I fill in "search_value" with "Alda"
+    When I press button "Search"
+    Then I should see message "Alan Alda"
+
+  Scenario: Search directors by partial dvd name
+    Given the following director exists:
+      | Name      | Gender | dob        |
+      | Alan Alda | male   | 01-28-1963 |
+    And I am on the new "dvds" page
+    Given I fill in "Name" with "M*A*S*H"
+    And I fill in "Summary" with "M*A*S*H rocks"
+    And I select "Alan Alda" for the dvd director
+    When I press button "Create Dvd"
+    Then I should see message "Dvd was successfully created."
+    When I go to the "directors" index page
+    And I select "DVD Name" for the search type
+    And I fill in "search_value" with "M*A*S"
+    When I press button "Search"
+    Then I should see message "Alan Alda"

@@ -150,6 +150,48 @@ Feature: Dvd tests
     Then I should see message "Dvd was successfully updated."
     And I should see date "03-28-1976"
 
+  Scenario: Search DVDs by partial name
+    Given the following dvd exists:
+      | Name      | Summary |
+      | M*A*S*H | M*A*S*H (1973)   |
+    And I go to the "dvds" index page
+    And I select "Name" for the search type
+    And I fill in "search_value" with "M*A*S"
+    When I press button "Search"
+    Then I should see message "M*A*S*H"
+
+  Scenario: Search DVDs by partial actor name
+    Given the following actor exists:
+      | Name      | Gender | dob        |
+      | Alan Alda | male   | 01-28-1963 |
+    And I am on the new "dvds" page
+    Given I fill in "Name" with "M*A*S*H"
+    And I fill in "Summary" with "M*A*S*H rocks"
+    And I select "Alan Alda" for the dvd actor
+    When I press button "Create Dvd"
+    Then I should see message "Dvd was successfully created."
+    When I go to the "dvds" index page
+    And I select "Actor Name" for the search type
+    And I fill in "search_value" with "Alda"
+    When I press button "Search"
+    Then I should see message "M*A*S*H"
+
+  Scenario: Search DVDs by partial director name
+    Given the following director exists:
+      | Name      | Gender | dob        |
+      | Robert Altman | male   | 01-28-1963 |
+    And I am on the new "dvds" page
+    Given I fill in "Name" with "M*A*S*H"
+    And I fill in "Summary" with "M*A*S*H rocks"
+    And I select "Robert Altman" for the dvd director
+    When I press button "Create Dvd"
+    Then I should see message "Dvd was successfully created."
+    When I go to the "dvds" index page
+    And I select "Director Name" for the search type
+    And I fill in "search_value" with "Robert"
+    When I press button "Search"
+    Then I should see message "M*A*S*H"
+
 
 
 
