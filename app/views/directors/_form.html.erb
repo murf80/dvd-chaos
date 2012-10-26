@@ -20,8 +20,7 @@
       <%= render :partial => "shared/date_select_partial", :locals => { :f => f, :date_label => "Date of birth" } %>
     </div>
   <div class="field">
-    <%= f.label :gender %><br />
-    <%= f.text_field :gender %>
+    <%= render :partial => "shared/gender_radio_partial", :locals => { :f => f, :cast => @director } %>
   </div>
   <div class="actions">
     <%= f.submit %>

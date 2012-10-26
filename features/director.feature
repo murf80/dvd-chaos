@@ -23,7 +23,7 @@ Feature: Director tests
     Given I am on the new "directors" page
     And I fill in "Name" with "Robert Altman"
     And I fill in date with month "January", day "28", and year "1936"
-    And I fill in "Gender" with "male"
+    And I choose "director_gender_male"
     When I press button "Create Director"
     Then I should see message "Director was successfully created."
     And I should see date "01-28-1936"
@@ -34,7 +34,7 @@ Feature: Director tests
     Given I am on the new "directors" page
     And I fill in "Name" with "Robert Altman"
     And I fill in date with month "January", day "28", and year "1936"
-    And I fill in "Gender" with "male"
+    And I choose "director_gender_male"
     When I press button "Create Director"
     Then I should see message "Director was successfully created."
     And I should see date "01-28-1936"
@@ -59,11 +59,3 @@ Feature: Director tests
     And I go to the "directors" index page
     When I follow link "Destroy"
     Then The director "Robert Altman" should be destroyed
-
-  Scenario: Create director with invalid gender
-    Given I am on the new "directors" page
-    And I fill in "Name" with "Robert Altman"
-    And I fill in date with month "January", day "28", and year "1936"
-    And I fill in "Gender" with "pat"
-    When I press button "Create Director"
-    Then I should see message "Gender is not included in the list"

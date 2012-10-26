@@ -23,7 +23,7 @@ Feature: Actor tests
     Given I am on the new "actors" page
     And I fill in "Name" with "Alan Alda"
     And I fill in date with month "January", day "28", and year "1936"
-    And I fill in "Gender" with "male"
+    And I choose "actor_gender_male"
     When I press button "Create Actor"
     Then I should see message "Actor was successfully created."
     And I should see date "01-28-1936"
@@ -34,7 +34,7 @@ Feature: Actor tests
     Given I am on the new "actors" page
     And I fill in "Name" with "Alan Alda"
     And I fill in date with month "January", day "28", and year "1936"
-    And I fill in "Gender" with "male"
+    And I choose "actor_gender_male"
     When I press button "Create Actor"
     Then I should see message "Actor was successfully created."
     And I should see date "01-28-1936"
@@ -59,11 +59,3 @@ Feature: Actor tests
     And I go to the "actors" index page
     When I follow link "Destroy"
     Then The actor "Alan Alda" should be destroyed
-
-  Scenario: Create actor with invalid gender
-    Given I am on the new "actors" page
-    And I fill in "Name" with "Alan Alda"
-    And I fill in date with month "January", day "28", and year "1936"
-    And I fill in "Gender" with "pat"
-    When I press button "Create Actor"
-    Then I should see message "Gender is not included in the list"

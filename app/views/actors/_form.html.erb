@@ -17,11 +17,10 @@
   </div>
   <div class="field">
     <%= f.label :dob %><br />
-    <%= render :partial => "shared/date_select_partial", :locals => { :f => f, :date_label => "Date of birth" } %>
+    <%= render :partial => "shared/date_select_partial", :locals => { :date_label => "Date of birth" } %>
   </div>
   <div class="field">
-    <%= f.label :gender %><br />
-    <%= f.text_field :gender %>
+    <%= render :partial => "shared/gender_radio_partial", :locals => { :f => f, :cast => @actor } %>
   </div>
   <div class="actions">
     <%= f.submit %>

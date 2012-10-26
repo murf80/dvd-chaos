@@ -31,3 +31,7 @@ When /^I fill in date with month "([^"]*)", day "([^"]*)", and year "([^"]*)"$/ 
   page.select arg2, :from => "selected_date[value(3i)]"
   page.select arg3, :from => "selected_date[value(1i)]"
 end
+
+When /^I choose "([^"]*)"$/ do |arg|
+  choose(arg)
+end
