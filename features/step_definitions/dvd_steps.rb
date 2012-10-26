@@ -84,6 +84,3 @@ end
 Then /^The "([^"]*)" dvd should be destroyed$/ do |arg|
   assert (Dvd.find_by_name(arg) == nil)
 end
-
-
-

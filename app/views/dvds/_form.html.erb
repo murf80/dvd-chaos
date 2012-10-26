@@ -29,7 +29,7 @@
   </div>
   <div class="field">
     <%= f.label :director %><br />
-    <%= collection_select :director, :id, Director.all, :id, :name%>
+    <%= collection_select :director, :id, Director.all, :id, :name, {:selected => @dvd.director_id}%>
   </div>
   <div class="field">
     <%= f.label :actors %><br />
