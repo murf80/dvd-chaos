@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bfd91d6-cb1a-4958-87a4-9f2c575f5676" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/actor.feature" afterPath="$PROJECT_DIR$/features/actor.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/director.feature" afterPath="$PROJECT_DIR$/features/director.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/dvd.feature" afterPath="$PROJECT_DIR$/features/dvd.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/common_steps.rb" afterPath="$PROJECT_DIR$/features/step_definitions/common_steps.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="dvd-chaos.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,15 +25,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/directors/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="35" selection-start="63" selection-end="63" vertical-scroll-proportion="-1.25">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_dvd_search_partial.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/shared/_dvd_search_partial.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -82,10 +70,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="actor.feature" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="actor.feature" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/actor.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="31" selection-start="4687" selection-end="4687" vertical-scroll-proportion="0.65460527">
+            <state line="117" column="31" selection-start="4687" selection-end="4687" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="47" selection-start="2287" selection-end="2287" vertical-scroll-proportion="0.75328946">
               <folding />
             </state>
           </provider>
@@ -135,7 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/directors/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/actors/search.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/actors_controller.rb" />
@@ -151,6 +147,7 @@
         <option value="$PROJECT_DIR$/features/dvd.feature" />
         <option value="$PROJECT_DIR$/features/director.feature" />
         <option value="$PROJECT_DIR$/features/actor.feature" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -650,7 +647,7 @@
       <recent name="$PROJECT_DIR$/app/models" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber.dvd">
+  <component name="RunManager" selected="Rake.test">
     <configuration default="false" name="db:migrate" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
       <module name="dvd-chaos" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -1151,7 +1148,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.6703645" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35332254" sideWeight="0.23817034" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35332254" sideWeight="0.3422713" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40851736" sideWeight="0.602107" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40851736" sideWeight="0.602107" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40851736" sideWeight="0.3922204" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35173503" sideWeight="0.684765" order="2" side_tool="false" content_ui="tabs" />
@@ -1219,13 +1216,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/dvds/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.794702">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/date_select_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="269" vertical-scroll-proportion="0.0">
@@ -1326,7 +1316,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/features/actor.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="31" selection-start="4687" selection-end="4687" vertical-scroll-proportion="0.65460527">
+        <state line="117" column="31" selection-start="4687" selection-end="4687" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="47" selection-start="2287" selection-end="2287" vertical-scroll-proportion="0.75328946">
           <folding />
         </state>
       </provider>
