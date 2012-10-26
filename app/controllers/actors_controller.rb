@@ -44,10 +44,17 @@ class ActorsController < ApplicationController
   # POST /actors.json
   def create
 
-    # process the dob first
+    # process the dob
     params[:actor][:dob] = DateSelectHelper.to_datetime(params[:selected_date])
 
     @actor = Actor.new(params[:actor])
+
+    # check for new dvds
+    @dvd_ids = params[:dvds] ? params[:dvds]["ids"] : nil
+    if @dvd_ids
+      @dvd_ids.shift
+      @actor.dvds <<  Dvd.find(@dvd_ids)
+    end
 
     respond_to do |format|
       if @actor.save
@@ -65,11 +72,24 @@ class ActorsController < ApplicationController
   def update
     @actor = Actor.find(params[:id])
 
-    # process the dob first
+    # process the dob
     params[:actor][:dob] = DateSelectHelper.to_datetime(params[:selected_date])
 
     respond_to do |format|
       if @actor.update_attributes(params[:actor])
+
+        # check for new dvds
+        @dvd_ids = params[:dvds] ? params[:dvds]["ids"] : nil
+        if @dvd_ids
+          @dvd_ids.shift
+          @actor.dvds = Array.new
+          @actor.dvds <<  Dvd.find(@dvd_ids)
+        else
+          @actor.dvds = nil
+        end
+      end
+
+      if @actor.save
         format.html { redirect_to @actor, notice: 'Actor was successfully updated.' }
         format.json { head :no_content }
       else

@@ -22,6 +22,10 @@
   <div class="field">
     <%= render :partial => "shared/gender_radio_partial", :locals => { :f => f, :cast => @actor } %>
   </div>
+  <div class="field">
+    <%= f.label :dvds %><br />
+    <%= collection_select :dvds, :ids, Dvd.all, :id, :name, {:selected => @actor.dvds.collect {|x| x.id.to_i}}, {:multiple => true, :size => 10} %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

@@ -59,3 +59,38 @@ Feature: Actor tests
     And I go to the "actors" index page
     When I follow link "Destroy"
     Then The actor "Alan Alda" should be destroyed
+
+  Scenario: Create actor through the ui with dvds
+    Given the following dvd exists:
+      | Name      | Summary |
+      | M*A*S*H | M*A*S*H (1973)   |
+    Given I am on the new "actors" page
+    And I fill in "Name" with "Alan Alda"
+    And I fill in date with month "January", day "28", and year "1936"
+    And I choose "actor_gender_male"
+    And I select "M*A*S*H" for the dvd name
+    When I press button "Create Actor"
+    Then I should see message "Actor was successfully created."
+    And I should see date "01-28-1936"
+    When I am on the view page for actor "Alan Alda"
+    Then I should see date "01-28-1936"
+    And I should see dvd name is "M*A*S*H"
+
+  Scenario: Update actor dvds through the ui
+    Given the following dvds exist:
+      | Name      | Summary |
+      | M*A*S*H | M*A*S*H (1973)   |
+      | RAD | RAD (1986)   |
+    Given I am on the new "actors" page
+    And I fill in "Name" with "Alan Alda"
+    And I fill in date with month "January", day "28", and year "1936"
+    And I choose "actor_gender_male"
+    And I select "M*A*S*H" for the dvd name
+    When I press button "Create Actor"
+    Then I should see message "Actor was successfully created."
+    When I follow link "Edit"
+    And I select "RAD" for the dvd name
+    When I press button "Update Actor"
+    Then I should see message "Actor was successfully updated."
+    When I am on the view page for actor "Alan Alda"
+    And I should see dvd name is "RAD"

@@ -1,3 +1,10 @@
+Given /^the following dvds exist:$/ do |table|
+  # table is a | Robert Altman |pending
+  table.hashes.each do |dvd_info|
+    dvd = FactoryGirl.create(:dvd, :name => dvd_info["Name"], :summary => dvd_info["Summary"])
+  end
+end
+
 Given /^the following dvd exists:$/ do |table|
   # table is a | Robert Altman |pending
   dvd_info = table.raw
@@ -83,4 +90,12 @@ end
 
 Then /^The "([^"]*)" dvd should be destroyed$/ do |arg|
   assert (Dvd.find_by_name(arg) == nil)
+end
+
+When /^I select "([^"]*)" for the dvd name$/ do |arg|
+  page.select arg, :from => "dvds_ids"
+end
+
+When /^I should see dvd name is "([^"]*)"$/ do |arg|
+  assert page.has_content?(arg)
 end
