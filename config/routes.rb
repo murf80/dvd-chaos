@@ -1,4 +1,7 @@
 DvdChaos::Application.routes.draw do
+
+  root :to => redirect("/dvds")
+
   resources :directors
 
   resources :actors
