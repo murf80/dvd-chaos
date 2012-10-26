@@ -1,0 +1,6 @@
+<%= form_tag(path, :method => "get") do %>
+    <%= label_tag(:q, "Search by:") %>
+    <%= select_tag(:search_by, options_for_select([['Name', 'name'], ['Actor Name', 'actor'], ['Director Name', 'director']], @search_by))%>
+    <%= text_field_tag(:search_value, params[:search_value]) %>
+    <%= submit_tag("Search") %>
+<% end %><br/>

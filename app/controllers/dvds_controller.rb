@@ -5,7 +5,37 @@ class DvdsController < ApplicationController
   # GET /dvds
   # GET /dvds.json
   def index
-    @dvds = Dvd.all
+
+    params = @_request.filtered_parameters
+    if params['search_by'] and params['search_value']
+      @search_by = params['search_by']
+      @search_value = params['search_value']
+      case @search_by
+        when "name"
+          # TODO This is needs to escape the inputs, not a big deal for this project though
+          @dvds = Dvd.all(:conditions => [ @search_by + " LIKE ?", "%" + @search_value + "%"])
+        when "actor"
+          # TODO This is hideous.  Definitely a better way to do it...another day
+          @dvds = Array.new
+          @actors = Actor.all(:include => :dvds, :conditions => [ "name LIKE ?", "%" + @search_value + "%"])
+          @actors.each do |actor|
+            @dvds << actor.dvds
+          end
+          @dvds = @dvds.flatten
+        when "director"
+          # TODO This is hideous.  Definitely a better way to do it...another day
+          @dvds = Array.new
+          @directors = Director.all(:include => :dvds, :conditions => [ "name LIKE ?", "%" + @search_value + "%"])
+          @directors.each do |director|
+            @dvds << director.dvds
+          end
+          @dvds = @dvds.flatten
+        else
+          @dvds = Dvd.all
+      end
+    else
+      @dvds = Dvd.all
+    end
 
     respond_to do |format|
       format.html # index.html.erb

