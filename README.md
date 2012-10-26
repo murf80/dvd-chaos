@@ -6,13 +6,13 @@ DVD Catalog Handler and Other Stuff.
 Overview
 ----------------
 My general strategy with this project (in order of priority) was to:
-1. Spend some time learning about the rails framework.  You notice commit churn as I
-   did this.
-2. Use cucumber and FactoryGirl to build tests before (or during) feature development.
-   I did not do any UI related JS testing, and I didn't muck with the controller tests
-   automatically created.
-3. Complete as many of the requirements and optional use cases as possible.
-4. Implement a killer UI (I never got to this one...as you'll see)
+* Spend some time learning about the rails framework.  You notice commit churn as I
+  did this.
+* Use cucumber and FactoryGirl to build tests before (or during) feature development.
+  I did not do any UI related JS testing, and I didn't muck with the controller tests
+  automatically created.
+* Complete as many of the requirements and optional use cases as possible.
+* Implement a killer UI (I never got to this one...as you'll see)
 
 Given those priorities, I focused the majority of my efforts on test coverage as opposed
 to the UI.  You'll notice the UI is simple (at best), but I believe I have 100%
