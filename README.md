@@ -32,7 +32,7 @@ Use Case Misses
   to do this one because I see it as purely a UI task (and I didn't focus on the UI).
   The underlying API should strictly deal with resources and not create side effects
   (good or bad) like automatically adding actors/directors.  In other words, that is
-  and orchestration challenge the UI (or curl, etc.) can deal with.
+  an orchestration challenge the UI (or curl, etc.) can deal with.
 
 General Comments
 ----------------
