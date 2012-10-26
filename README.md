@@ -6,13 +6,13 @@ DVD Catalog Handler and Other Stuff.
 Overview
 ----------------
 My general strategy with this project (in order of priority) was to:
-1) Spend some time learning about the rails framework.  You notice commit churn as I
+1. Spend some time learning about the rails framework.  You notice commit churn as I
    did this.
-2) Use cucumber and FactoryGirl to build tests before (or during) feature development.
+2. Use cucumber and FactoryGirl to build tests before (or during) feature development.
    I did not do any UI related JS testing, and I didn't muck with the controller tests
    automatically created.
-3) Complete as many of the requirements and optional use cases as possible.
-4) Implement a killer UI (I never got to this one...as you'll see)
+3. Complete as many of the requirements and optional use cases as possible.
+4. Implement a killer UI (I never got to this one...as you'll see)
 
 Given those priorities, I focused the majority of my efforts on test coverage as opposed
 to the UI.  You'll notice the UI is simple (at best), but I believe I have 100%
@@ -38,7 +38,7 @@ General Comments
 ----------------
 * Rails blows away python/django.  Was very impressed with the amount of effort
   put into generators, etc.  Very easy/efficient to use.
-* You'll notice varying degrees or proper tests.  Took me a bit to get the feel of
+* You'll notice varying degrees of proper tests.  Took me a bit to get the feel of
   cucumber, and I didn't have time to go back and refactor the early tests.  In
   addition, I am sure there are better ways to validate results that one picks
   up over time.  I also went back and forth on how generic/specific to make the
